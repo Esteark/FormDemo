@@ -53,7 +53,7 @@ const Form = () => {
             placeholder="Enter your first name"
             className="inputForm"
             {...register("nom", {
-              required: "Los apellidos son requeridos",
+              required: "Los campo nombre es requerido",
             })}
           />
         </label>
