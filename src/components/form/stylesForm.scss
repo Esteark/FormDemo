@@ -1,0 +1,104 @@
+@use "../../vars.scss" as v;
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  .titleForm {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .labelForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 600;
+    color: v.$secondaryBlack;
+    width: 100%;
+  }
+  .inputForm {
+    background-color: transparent;
+    border: 1px solid v.$gray;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+
+    &:focus {
+      outline: v.$secondary;
+    }
+  }
+
+  .secErrors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: flex-start;
+
+    .lblError {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: v.$primary;
+      font-weight: 600;
+      .iconError {
+        color: v.$error;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .secSend {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    .btnForm {
+      padding: 15px 3px;
+      border-radius: 10px;
+      border: none;
+      font-weight: 600;
+      background: v.$primary;
+      color: v.$white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        background-color: v.$secondary;
+      }
+    }
+
+    h4 {
+      align-self: center;
+      font-weight: normal;
+      a {
+        font-weight: 700;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: v.$secondary;
+      }
+    }
+  }
+}
+
+@media (min-width: 1286px) {
+  .form {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    .titleForm {
+      font-size: 2.2rem;
+    }
+  }
+}

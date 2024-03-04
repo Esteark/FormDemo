@@ -1,0 +1,50 @@
+@use "../vars.scss" as v;
+.secSucc {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    background-color: v.$gray2;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 30px;
+    height: 30rem;
+
+    &__1 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .iconCard {
+      color: v.$third;
+      font-size: 4rem;
+    }
+
+    .titleCard {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .pCard {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .pSuccess {
+      color: v.$secondary;
+      font-size: 1.5rem;
+    }
+
+    .iconBack {
+      font-size: 3rem;
+      color: v.$secondary;
+    }
+  }
+}
