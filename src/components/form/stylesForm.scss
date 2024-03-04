@@ -21,6 +21,7 @@
     font-weight: 600;
     color: v.$secondaryBlack;
     width: 100%;
+    position: relative;
   }
   .inputForm {
     background-color: transparent;
@@ -87,6 +88,12 @@
         color: v.$secondary;
       }
     }
+  }
+
+  .iconShow {
+    position: absolute;
+    right: 0.5rem;
+    top: calc(50% + 5px);
   }
 }
 
